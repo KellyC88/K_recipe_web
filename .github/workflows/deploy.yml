@@ -16,6 +16,10 @@ jobs:
         with:
           node-version: '24'
       - run: npm ci
-      - run: npm run deploy
+      - run: |
+          git config --global http.postBuffer 524288000
+          git config --global http.lowSpeedLimit 0
+          git config --global http.lowSpeedTime 999999
+          npm run deploy
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
