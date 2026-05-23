@@ -1,7 +1,7 @@
 {
   "name": "k_package",
   "private": true,
-  "homepage": "https://KellyC88.github.io/K_recipeweb/",
+  "homepage": "https://KellyC88.github.io/K_recipe_web/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
