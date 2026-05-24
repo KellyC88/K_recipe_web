@@ -10,8 +10,16 @@ $espresso: #5b4c3a;
 $charcoal: #191a1e;
 $winered: #49110b;
 
+.product-details-page {
+  padding-top: 90px;
+}
+
+.product_page {
+  padding: 20px;
+}
+
 .product_name{
-    padding-top: 90px;
+    padding-top: 0;
     height: fit-content;
     width: 100%;
     border: 1px solid $charcoal;

@@ -1,12 +1,13 @@
 <template>
-  <div v-if="product">
-   <NavBar />
+  <div v-if="product" class="product-details-page">
+    <NavBar />
+    <div class="product_page">
+      <h4 class="product_name">{{ product.name }}</h4>
+      <div class="product_img_box">
+        <img class="product_img" src="@/assets/product8.JPG" alt="{{ product.name }}">
+      </div>
+    </div>
   </div>
-  <h4 class="product_name" >{{ product.name }}</h4>
-  <div class="product_img_box">
-    <img class="product_img" src="" alt="">
-  </div>
-  
 </template>
 
 <script>
