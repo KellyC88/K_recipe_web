@@ -9,7 +9,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "build:pages-root": "npm run build && cp -R dist/. .",
+    "deploy:pages-root": "npm run build:pages-root"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",
