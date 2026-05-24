@@ -8,10 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "build:docs": "npm run build && rm -rf docs && mkdir docs && cp -R dist/* docs && touch docs/.nojekyll",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "build:pages-root": "npm run build && cp -R dist/. .",
-    "deploy:pages-root": "npm run build:pages-root"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",

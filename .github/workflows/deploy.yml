@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - 'docs/**'
 
 jobs:
   deploy:
@@ -18,8 +20,10 @@ jobs:
         with:
           node-version: '24'
       - run: npm ci
-      - run: npm run build
+      - run: npm run build:docs
       - run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-      - run: npx gh-pages -d dist --repo https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git add docs
+          git diff --cached --quiet -- docs || git commit -m "Deploy docs [skip ci]"
+          git push origin HEAD:main
