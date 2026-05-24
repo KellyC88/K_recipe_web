@@ -1,9 +1,11 @@
 <template>
-  <NavBar />
   <div v-if="product">
-   <h4 class="product_name" >{{ product.name }}</h4>
+   <NavBar />
   </div>
-  <div class="product_img"><img src="" alt=""></div>
+  <h4 class="product_name" >{{ product.name }}</h4>
+  <div class="product_img_box">
+    <img class="product_img" src="" alt="">
+  </div>
   
 </template>
 
