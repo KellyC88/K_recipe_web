@@ -25,7 +25,7 @@
       </router-link>
       <router-link class="img_container"  :to="{name:'ProductDetails', params:{id:3}}">
         <div class="img_overlay"> 
-          <div class="img_text">SALAD</div>
+          <div class="img_text">CROISSANT</div>
         </div>
         <a href="#!" ><img class="img" src="@/assets/product8.JPG"></a>
       </router-link>
@@ -122,10 +122,10 @@ export default {
   },
   data() {
     return {
-      products: [
+      product: [
         { id: 1, name: 'oatmeal' },
         { id: 2, name: 'sourdough' },
-        { id: 3, name: 'salad' },
+        { id: 3, name: 'croissant' },
         { id: 4, name: 'cookie' },
       ],
     };
