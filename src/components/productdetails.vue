@@ -6,8 +6,39 @@
       <div class="photo-3-4" v-if="currentImage">
         <img :src="currentImage.src" :alt="currentImage.alt">
       </div>
+      <div class="description_box">
+        <p>Description: {{ product.description }}</p>
+      </div>
+      <div class="ingredient_check_box">
+        <div class="col-4">
+          <div id="list" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+          </div>
+        </div>
+        <div data-bs-spy="scroll" data-bs-target="#list" data-bs-smooth-scroll="true" 
+           class="scrollspy-example" tabindex="0">
+          <h4 id="list-item-1">Item 1</h4>
+          <p>...</p>
+          <h4 id="list-item-2">Item 2</h4>
+          <p>...</p>
+          <h4 id="list-item-3">Item 3</h4>
+          <p>...</p>
+          <h4 id="list-item-4">Item 4</h4>
+          <p>...</p>
+        </div>
+      </div>
     </div>
   </div>
+    <div class="product_recipe">
+      <p>Recipe: {{ product.recipe }}</p>
+    </div>
+      
+
+      
+   
 </template>
 
 <script>
@@ -26,17 +57,17 @@ export default {
     return {
       product: null,
       products: [
-        { id: 1, name: 'oatmeal' },
-        { id: 2, name: 'sourdough' },
-        { id: 3, name: 'croissant' },
-        { id: 4, name: 'cookie' },
+        { id: 1, name: 'oatmeal', description: 'healthy', ingredient: 'oat' },
+        { id: 2, name: 'sourdough', description: 'tasty', ingredient: 'sourdough' },
+        { id: 3, name: 'croissant', description: 'flaky', ingredient: 'croissant' },
+        { id: 4, name: 'cookie', description: 'low sugar', ingredient: 'cookie' },
       ],
       productImages: [
         { id: 1, src: oatmeal, alt: 'oatmeal' },
         { id: 2, src: sourdough, alt: 'sourdough' },
         { id: 3, src: croissant, alt: 'croissant' },
         { id: 4, src: cookie, alt: 'cookie' },
-      ]
+      ],
     };
   },
   computed: {

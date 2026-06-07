@@ -120,16 +120,6 @@ export default {
   components: {
     NavBar,
   },
-  data() {
-    return {
-      product: [
-        { id: 1, name: 'oatmeal' },
-        { id: 2, name: 'sourdough' },
-        { id: 3, name: 'croissant' },
-        { id: 4, name: 'cookie' },
-      ],
-    };
-  },
   mounted() {
     this.setupIntersectionObserver();
   },
