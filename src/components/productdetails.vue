@@ -12,16 +12,16 @@
       <div class="ingredient_check_box">
         <div class="col-4">
           <div id="list" class="list-group">
-            <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+            <a class="list-group-item list-group-item-action"></a>
+            <a class="list-group-item list-group-item-action" ></a>
+            <a class="list-group-item list-group-item-action"></a>
+            <a class="list-group-item list-group-item-action"></a>
           </div>
         </div>
         <div data-bs-spy="scroll" data-bs-target="#list" data-bs-smooth-scroll="true" 
            class="scrollspy-example" tabindex="0">
           <h4 id="list-item-1">Item 1</h4>
-          <p>...</p>
+          <p></p>
           <h4 id="list-item-2">Item 2</h4>
           <p>...</p>
           <h4 id="list-item-3">Item 3</h4>
@@ -32,8 +32,14 @@
       </div>
     </div>
   </div>
-    <div class="product_recipe">
-      <p>Recipe: {{ product.recipe }}</p>
+    <div class="product_recipe" v-if="product">
+      <h3 class="recipe_title">Recipe</h3>
+      <h4>Step 1</h4>
+      <p>...</p>
+      <h4>Step 2</h4>
+      <p>...</p>
+      <h4>Step 3</h4>
+      <p>...</p>
     </div>
       
 
@@ -46,7 +52,7 @@ import NavBar from './NavBar.vue'
 import oatmeal from '../assets/oat.jpg'
 import sourdough from '../assets/brekkie.jpg'
 import croissant from '../assets/product8.jpg'
-import cookie from '../assets/product5.jpg'
+import lemontea from '../assets/product5.jpg'
 
 export default {
   name: 'ProductDetails',
@@ -60,13 +66,13 @@ export default {
         { id: 1, name: 'oatmeal', description: 'healthy', ingredient: 'oat' },
         { id: 2, name: 'sourdough', description: 'tasty', ingredient: 'sourdough' },
         { id: 3, name: 'croissant', description: 'flaky', ingredient: 'croissant' },
-        { id: 4, name: 'cookie', description: 'low sugar', ingredient: 'cookie' },
+        { id: 4, name: 'lemontea', description: 'refreshing', ingredient: 'lemontea' },
       ],
       productImages: [
         { id: 1, src: oatmeal, alt: 'oatmeal' },
         { id: 2, src: sourdough, alt: 'sourdough' },
         { id: 3, src: croissant, alt: 'croissant' },
-        { id: 4, src: cookie, alt: 'cookie' },
+        { id: 4, src: lemontea, alt: 'lemontea' },
       ],
     };
   },

@@ -19,8 +19,11 @@ $winered: #49110b;
 
 .product-details-page {
   padding-top: 90px;
-  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
   background-color: $warmwhite;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .product_page {
@@ -114,4 +117,21 @@ $winered: #49110b;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     text-align: left;
+    p{
+      padding-left: 5px;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    h4{
+      margin: 0;
+      margin-top: 5px;
+    }
+  }
+  .recipe_title{
+    font-size: 22px;
+    font-family: "Momo Signature", cursive;
+    font-weight: 600;
+    color: $charcoal;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }

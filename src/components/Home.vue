@@ -15,13 +15,13 @@
         <div class="img_overlay">
           <div class="img_text">OATMEAL</div>
         </div>
-        <a href="#!" ><img class="img" src="@/assets/product8.JPG"></a>
+        <a href="#!" ><img class="img" src="@/assets/oat.jpg"></a>
       </router-link>
       <router-link class="img_container" :to="{name:'ProductDetails', params:{id:2}}">
         <div class="img_overlay">
           <div class="img_text">SOURDOUGH</div>
         </div>
-        <a href="#!" ><img class="img" src="@/assets/product8.JPG"></a>
+        <a href="#!" ><img class="img" src="@/assets/brekkie.jpg"></a>
       </router-link>
       <router-link class="img_container"  :to="{name:'ProductDetails', params:{id:3}}">
         <div class="img_overlay"> 
@@ -31,9 +31,9 @@
       </router-link>
       <router-link class="img_container" :to="{name:'ProductDetails', params:{id:4}}">
         <div class="img_overlay">
-          <div class="img_text">COOKIE</div>
+          <div class="img_text">LEMONTEA</div>
         </div>
-        <a href="#!" ><img class="img" src="@/assets/product8.JPG"></a>
+        <a href="#!" ><img class="img" src="@/assets/product5.jpg"></a>
       </router-link>
     </div>
   </div>
