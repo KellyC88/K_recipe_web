@@ -10,37 +10,21 @@
         <p>Description: {{ product.description }}</p>
       </div>
       <div class="ingredient_check_box">
-        <div class="col-4">
-          <div id="list" class="list-group">
-            <a class="list-group-item list-group-item-action"></a>
-            <a class="list-group-item list-group-item-action" ></a>
-            <a class="list-group-item list-group-item-action"></a>
-            <a class="list-group-item list-group-item-action"></a>
-          </div>
-        </div>
-        <div data-bs-spy="scroll" data-bs-target="#list" data-bs-smooth-scroll="true" 
-           class="scrollspy-example" tabindex="0">
-          <h4 id="list-item-1">Item 1</h4>
-          <p></p>
-          <h4 id="list-item-2">Item 2</h4>
-          <p>...</p>
-          <h4 id="list-item-3">Item 3</h4>
-          <p>...</p>
-          <h4 id="list-item-4">Item 4</h4>
-          <p>...</p>
-        </div>
+        <h3 class="ingredient_title">Ingredients</h3>
+        <Ingredients :ingredients="productIngredients" />
+      </div>
+      <div class="product_recipe" v-if="product">
+        <h3 class="recipe_title">Recipe</h3>
+        <h4>Step 1</h4>
+        <p>...</p>
+       <h4>Step 2</h4>
+       <p>...</p>
+        <h4>Step 3</h4>
+       <p>...</p>
       </div>
     </div>
   </div>
-    <div class="product_recipe" v-if="product">
-      <h3 class="recipe_title">Recipe</h3>
-      <h4>Step 1</h4>
-      <p>...</p>
-      <h4>Step 2</h4>
-      <p>...</p>
-      <h4>Step 3</h4>
-      <p>...</p>
-    </div>
+    
       
 
       
@@ -49,24 +33,27 @@
 
 <script>
 import NavBar from './NavBar.vue'
+import Ingredients from './Ingredients.vue'
 import oatmeal from '../assets/oat.jpg'
 import sourdough from '../assets/brekkie.jpg'
 import croissant from '../assets/product8.jpg'
 import lemontea from '../assets/product5.jpg'
+import ingredientsMap from '../data/ingredients'
 
 export default {
   name: 'ProductDetails',
   components: {
     NavBar,
+    Ingredients,
   },
   data() {
     return {
       product: null,
       products: [
-        { id: 1, name: 'oatmeal', description: 'healthy', ingredient: 'oat' },
-        { id: 2, name: 'sourdough', description: 'tasty', ingredient: 'sourdough' },
-        { id: 3, name: 'croissant', description: 'flaky', ingredient: 'croissant' },
-        { id: 4, name: 'lemontea', description: 'refreshing', ingredient: 'lemontea' },
+        { id: 1, name: 'oatmeal', description: 'healthy', checked: false },
+        { id: 2, name: 'sourdough', description: 'tasty', ingredient: 'sourdough', checked: false },
+        { id: 3, name: 'croissant', description: 'flaky', ingredient: 'croissant', checked: false },
+        { id: 4, name: 'lemontea', description: 'refreshing', ingredient: 'lemontea', checked: false },
       ],
       productImages: [
         { id: 1, src: oatmeal, alt: 'oatmeal' },
@@ -80,6 +67,10 @@ export default {
     currentImage() {
       if (!this.product) return null
       return this.productImages.find((item) => item.id === this.product.id) || null
+    },
+    productIngredients() {
+      if (!this.product) return []
+      return ingredientsMap[this.product.id] || []
     },
   },
   mounted() {

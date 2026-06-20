@@ -85,7 +85,20 @@ $winered: #49110b;
     font-size: 14px;
     text-align: left; 
   }
-  
+  .scrollspy{
+    h4{
+      margin: 0;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+    p{
+      padding-left: 5px;
+      padding-bottom: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 12px;
+    }
+  }
   .ingredient_check_box{
     border: 1px solid $charcoal;
     width: 400px;
@@ -119,19 +132,30 @@ $winered: #49110b;
     text-align: left;
     p{
       padding-left: 5px;
-      margin: 0;
-      margin-bottom: 10px;
+      padding-bottom: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 12px;
     }
     h4{
       margin: 0;
       margin-top: 5px;
+      font-size: 14px;
     }
   }
-  .recipe_title{
-    font-size: 22px;
+  .ingredient_title{
+    font-size: 18px;
     font-family: "Momo Signature", cursive;
     font-weight: 600;
-    color: $charcoal;
+    color: $mocha;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .recipe_title{
+    font-size: 18px;
+    font-family: "Momo Signature", cursive;
+    font-weight: 600;
+    color: $mocha;
     margin-top: 15px;
     margin-bottom: 20px;
   }
