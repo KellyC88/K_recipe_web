@@ -5,6 +5,7 @@ import Subscribe from '../components/Subscribe.vue'
 import ProductDetails from '../components/productdetails.vue'
 import '../../SCSS/home.scss'
 import '../../SCSS/productdetails.scss'
+import '../../SCSS/ingredients.scss'
 
 const routes = [
     { path: '/', name: 'Home', component: Home },
