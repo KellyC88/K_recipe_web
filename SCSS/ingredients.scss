@@ -12,16 +12,23 @@ $winered: #49110b;
 
 
 
-.list-group-item {
-  display: flex;
-  align-items: flex-start;
-  padding-left: 5px;
-  color: $mocha;
-  margin-bottom: 5px;
-  .item-name {
-    margin-left: 5px;
-  }
+
+.form-check-input:checked {
+  accent-color: $mocha;
 }
-.form-check-input {
-  margin-bottom: 5px;
+.item-name{
+  display: inline-block;
+  padding-left: 0.5rem;
+}
+.list-group-item {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  
+}
+.item-name.checked {
+  text-decoration: line-through;
+  opacity: 0.65;
 }

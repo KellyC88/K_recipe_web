@@ -6,9 +6,10 @@
       <div class="photo-3-4" v-if="currentImage">
         <img :src="currentImage.src" :alt="currentImage.alt">
       </div>
-      <div class="description_box">
-        <p>Description: {{ product.description }}</p>
-      </div>
+      <!-- <div class="description_box">
+        <h3 class="description_title">Description</h3>
+        <p class="description_text">{{ product.description }}</p>
+      </div> -->
       <div class="ingredient_check_box">
         <h3 class="ingredient_title">Ingredients</h3>
         <Ingredients :ingredients="productIngredients" />
@@ -16,7 +17,7 @@
       <div class="product_recipe" v-if="product">
         <h3 class="recipe_title">Recipe</h3>
         <h4>Step 1</h4>
-        <p>...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae asperiores, perspiciatis recusandae ullam iure amet itaque minima tempore enim temporibus velit doloremque. Praesentium earum facere consequuntur possimus enim dolorum illum?</p>
        <h4>Step 2</h4>
        <p>...</p>
         <h4>Step 3</h4>

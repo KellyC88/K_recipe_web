@@ -1,5 +1,8 @@
 export default [
   'oats',
   'milk',
-  'banana'
+  'banana',
+  'sugar',
+  'sea salt',
+  'greek yogurt',
 ];

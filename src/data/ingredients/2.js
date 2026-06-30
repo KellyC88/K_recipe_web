@@ -1,5 +1,10 @@
 export default [
   'flour',
   'water',
-  'yeast'
+  'yeast',
+  'salt',
+  'sugar',
+  'butter',
+  'eggs',
+  'milk',
 ];

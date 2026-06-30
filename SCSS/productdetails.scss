@@ -72,19 +72,39 @@ $winered: #49110b;
       object-fit: contain;
     }
   }
-  .description_box{
-    border: 1px solid $charcoal;
-    width: 400px;
-    height: fit-content;
-    position: absolute;
-    left: 480px;
-    top: 180px;
-    padding-left: 20px;
-    margin: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-    text-align: left; 
-  }
+  // .description_title{
+  //   border: 1px solid $charcoal;
+  //   width: fit-content;
+  //   height: fit-content;
+  //   font-size: 18px;
+  //   font-family: "Momo Signature", cursive;
+  //   font-weight: 600;
+  //   color: $mocha;
+  //   margin-top: 15px;
+  //   // margin-bottom: 20px;
+  // }
+  // .description_text{
+  //   width: 400px;
+  //   height: fit-content;
+  //   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  //   font-size: 14px;
+  //   text-align: left;
+  //   margin: 0;
+  //   margin-bottom: 20px;
+  // }
+  // .description_box{
+  //   // border: 1px solid $charcoal;
+  //   width: 400px;
+  //   height: fit-content;
+  //   position: absolute;
+  //   left: 480px;
+  //   top: 180px;
+  //   padding-left: 20px;
+  //   margin: none;
+  //   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  //   font-size: 14px;
+  //   text-align: left; 
+  // }
   .scrollspy{
     h4{
       margin: 0;
@@ -100,18 +120,20 @@ $winered: #49110b;
     }
   }
   .ingredient_check_box{
-    border: 1px solid $charcoal;
+    border: 1px solid $olivebrown;
+    border-radius: 15px;
     width: 400px;
     height: fit-content;
     position: absolute;
     left: 480px;
-    top: 240px;
+    top: 180px;
     padding-left: 20px;
     margin: none;
     height: fit-content;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     text-align: left;
+    background-color: $warmbeige;
     .col-4{
       display: flex;
       flex-direction: column;
@@ -119,7 +141,8 @@ $winered: #49110b;
     }
   }
   .product_recipe{
-    border: 1px solid $charcoal;
+    border: 1px solid $olivebrown;
+    border-radius: 15px;
     width: 400px;
     height: fit-content;
     position: absolute;
@@ -130,8 +153,10 @@ $winered: #49110b;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     text-align: left;
+    background-color: $warmbeige;
     p{
       padding-left: 5px;
+      padding-right: 5px;
       padding-bottom: 5px;
       margin-top: 5px;
       margin-bottom: 5px;

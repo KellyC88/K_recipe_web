@@ -1,5 +1,10 @@
 export default [
   'tea leaves',
   'water',
-  'lemon'
+  'lemon',
+  'honey',
+  'ginger',
+  'mint',
+  'cinnamon',
+  
 ];
