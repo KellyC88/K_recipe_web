@@ -45,27 +45,27 @@
     <div class="box">
       <router-link class="img_container" :to="{name:'ProductDetails', params:{id:5}}">
         <div class="img_overlay">
-          <div class="img_text">OATMEAL</div>
+          <div class="img_text">Scrambled Oat</div>
         </div>
         <a href="#!" ><img class="img" src="@/assets/oatmeal01.jpg"></a>
       </router-link>
-      <router-link class="img_container" :to="{name:'ProductDetails', params:{id:5}}">
+      <router-link class="img_container" :to="{name:'ProductDetails', params:{id:6}}">
         <div class="img_overlay">
-          <div class="img_text">SOURDOUGH</div>
+          <div class="img_text">Granola</div>
         </div>
-        <a href="#!" ><img class="img" src="@/assets/brekkie.jpg"></a>
+        <a href="#!" ><img class="img" src="@/assets/granola.jpg"></a>
       </router-link>
-      <router-link class="img_container"  :to="{name:'ProductDetails', params:{id:6}}">
+      <router-link class="img_container"  :to="{name:'ProductDetails', params:{id:1}}">
         <div class="img_overlay"> 
-          <div class="img_text">CROISSANT</div>
+          <div class="img_text">Fruit Oatmeal</div>
         </div>
-        <a href="#!" ><img class="img" src="@/assets/product8.JPG"></a>
+        <a href="#!" ><img class="img" src="@/assets/oat.jpg"></a>
       </router-link>
-      <router-link class="img_container" :to="{name:'ProductDetails', params:{id:7}}">
+      <router-link class="img_container" :to="{name:'ProductDetails', params:{id:8}}">
         <div class="img_overlay">
-          <div class="img_text">LEMONTEA</div>
+          <div class="img_text">Oatmeal02</div>
         </div>
-        <a href="#!" ><img class="img" src="@/assets/product5.jpg"></a>
+        <a href="#!" ><img class="img" src="@/assets/oatmeal02.jpg"></a>
       </router-link>
     </div>
   </div>
@@ -116,6 +116,7 @@
 
 <script>
 import NavBar from './NavBar.vue'
+
 
 export default {
   name: 'Home',
