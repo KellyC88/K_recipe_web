@@ -41,27 +41,27 @@
     <h4 class="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, similique pariatur laboriosam laudantium soluta porro alias veritatis fugit? Dolorem aliquam nihil ullam, nisi quis eveniet tempore voluptas veniam ratione quas.</h4>
   </div>
   <div class="product_set2" ref="productSet2">
-    <h3 class="topic">Most Popular</h3>
+    <h3 class="topic">OatMeal</h3>
     <div class="box">
-      <router-link class="img_container" :to="{name:'ProductDetails', params:{id:1}}">
+      <router-link class="img_container" :to="{name:'ProductDetails', params:{id:5}}">
         <div class="img_overlay">
           <div class="img_text">OATMEAL</div>
         </div>
-        <a href="#!" ><img class="img" src="@/assets/oat.jpg"></a>
+        <a href="#!" ><img class="img" src="@/assets/oatmeal01.jpg"></a>
       </router-link>
-      <router-link class="img_container" :to="{name:'ProductDetails', params:{id:2}}">
+      <router-link class="img_container" :to="{name:'ProductDetails', params:{id:5}}">
         <div class="img_overlay">
           <div class="img_text">SOURDOUGH</div>
         </div>
         <a href="#!" ><img class="img" src="@/assets/brekkie.jpg"></a>
       </router-link>
-      <router-link class="img_container"  :to="{name:'ProductDetails', params:{id:3}}">
+      <router-link class="img_container"  :to="{name:'ProductDetails', params:{id:6}}">
         <div class="img_overlay"> 
           <div class="img_text">CROISSANT</div>
         </div>
         <a href="#!" ><img class="img" src="@/assets/product8.JPG"></a>
       </router-link>
-      <router-link class="img_container" :to="{name:'ProductDetails', params:{id:4}}">
+      <router-link class="img_container" :to="{name:'ProductDetails', params:{id:7}}">
         <div class="img_overlay">
           <div class="img_text">LEMONTEA</div>
         </div>
@@ -70,7 +70,7 @@
     </div>
   </div>
   <div class="product_set3" ref="productSet3">
-    <h3 class="topic">Most Popular</h3>
+    <h3 class="topic">High Protein</h3>
     <div class="box">
       <router-link class="img_container" :to="{name:'ProductDetails', params:{id:1}}">
         <div class="img_overlay">
