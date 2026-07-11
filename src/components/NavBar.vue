@@ -16,7 +16,7 @@
         </ul>
       </div>
       <router-link class="list" :to="{ name: 'Subscribe' }">Subscribe</router-link>
-      <a class="list" href="#contact">Contact</a>
+      <!-- <a class="list" href="#contact">Contact</a> -->
       <router-link class="list" :to="{ name: 'LogIn' }">LogIn</router-link>
     </div>
     <div class="searchbox">

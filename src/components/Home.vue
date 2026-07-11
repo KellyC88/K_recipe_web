@@ -38,8 +38,9 @@
     </div>
   </div>
   <div class="intro_box">
-    <h4 class="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, similique pariatur laboriosam laudantium soluta porro alias veritatis fugit? Dolorem aliquam nihil ullam, nisi quis eveniet tempore voluptas veniam ratione quas.</h4>
-  </div>
+      <h4 class="intro">ALAALALA/</h4>
+      <img class="intro_bgimg" src="../assets/plant.jpg" alt="">
+    </div>
   <div class="product_set2" ref="productSet2">
     <h3 class="topic">OatMeal</h3>
     <div class="box">
