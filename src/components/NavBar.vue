@@ -39,7 +39,7 @@ export default {
       selectedCategory: null,
       categories: [
         'Oatmeal',
-        'Breakfast',
+        'Brekkie',
         'High Protein',
         'Snacks',
       ],
