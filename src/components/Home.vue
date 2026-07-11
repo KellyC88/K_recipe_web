@@ -71,25 +71,25 @@
     </div>
   </div>
   <div class="product_set3" ref="productSet3">
-    <h3 class="topic">High Protein</h3>
+    <h3 class="topic">Breakfast</h3>
     <div class="box">
       <router-link class="img_container" :to="{name:'ProductDetails', params:{id:1}}">
         <div class="img_overlay">
-          <div class="img_text">OATMEAL</div>
+          <div class="img_text">Baked French Toast</div>
         </div>
-        <a href="#!" ><img class="img" src="@/assets/oat.jpg"></a>
+        <a href="#!" ><img class="img" src="../assets/bake french toast.jpg"></a>
       </router-link>
       <router-link class="img_container" :to="{name:'ProductDetails', params:{id:2}}">
         <div class="img_overlay">
-          <div class="img_text">SOURDOUGH</div>
+          <div class="img_text">Bagel</div>
         </div>
-        <a href="#!" ><img class="img" src="@/assets/brekkie.jpg"></a>
+        <a href="#!" ><img class="img" src="@/assets/bagel.jpg"></a>
       </router-link>
       <router-link class="img_container"  :to="{name:'ProductDetails', params:{id:3}}">
         <div class="img_overlay"> 
-          <div class="img_text">CROISSANT</div>
+          <div class="img_text">Oat Pancake</div>
         </div>
-        <a href="#!" ><img class="img" src="@/assets/product8.JPG"></a>
+        <a href="#!" ><img class="img" src="@/assets/oat_pancake.jpg"></a>
       </router-link>
       <router-link class="img_container" :to="{name:'ProductDetails', params:{id:4}}">
         <div class="img_overlay">

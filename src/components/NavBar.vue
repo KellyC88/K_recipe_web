@@ -41,7 +41,7 @@ export default {
         'Oatmeal',
         'Breakfast',
         'High Protein',
-        'Sourdough',
+        'Snacks',
       ],
     }
   },
