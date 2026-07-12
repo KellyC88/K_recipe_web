@@ -55,7 +55,7 @@ export default {
     return {
       product: null,
       products: [
-        { id: 1, name: 'oatmeal', description: 'healthy', checked: false },
+        { id: 1, name: 'granola', description: 'healthy, crispy, sweet', checked: false },
         { id: 2, name: 'sourdough', description: 'tasty', ingredient: 'sourdough', checked: false },
         { id: 3, name: 'croissant', description: 'flaky', ingredient: 'croissant', checked: false },
         { id: 4, name: 'lemontea', description: 'refreshing', ingredient: 'lemontea', checked: false },
@@ -65,12 +65,12 @@ export default {
         { id: 8, name: 'oatmeal02', description: 'delicious', ingredient: 'oatmeal', checked: false },  
       ],
       productImages: [
-        { id: 1, src: oatmeal, alt: 'oatmeal' },
-        { id: 2, src: sourdough, alt: 'sourdough' },
-        { id: 3, src: croissant, alt: 'croissant' },
-        { id: 4, src: lemontea, alt: 'lemontea' },
-        { id: 5, src: oatmeal01, alt: 'oatmeal01' },
-        { id: 6, src: granola, alt: 'granola' },
+        { id: 1, src: granola, alt: 'Granola' },
+        { id: 2, src: sourdough, alt: 'Sourdough' },
+        { id: 3, src: croissant, alt: 'Croissant' },
+        { id: 4, src: lemontea, alt: 'Lemon Tea' },
+        { id: 5, src: oatmeal01, alt: 'Oatmeal 01' },
+        { id: 6, src: granola, alt: 'Granola`' },
         { id: 7, src: lemontea, alt: 'lemontea' },
         { id: 8, src: oatmeal02, alt: 'oatmeal02' },
       ],
@@ -82,8 +82,10 @@ export default {
       return this.productImages.find((item) => item.id === this.product.id) || null
     },
     productIngredients() {
-      if (!this.product) return []
-      return ingredientsMap[this.product.id] || []
+      if (!this.product) return { servings: 1, ingredients: [] }
+      // Map product ID to ingredient data, using modulo to handle products that share ingredients
+      const ingredientId = this.product.id <= 4 ? this.product.id : ((this.product.id - 1) % 4 + 1)
+      return ingredientsMap[ingredientId] || { servings: 1, ingredients: [] }
     },
   },
   mounted() {

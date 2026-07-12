@@ -32,3 +32,94 @@ $winered: #49110b;
   text-decoration: line-through;
   opacity: 0.65;
 }
+
+
+.servingsbox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 0px;
+  padding: 0px;
+  background-color: none;
+  border-radius: 8px;
+}
+
+.servings-label {
+  font-weight: 400;
+  font-size: 16px;
+  margin: none;
+  padding: 0px;
+}
+
+.servings-input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  border: none;
+}
+
+
+.btn-serving {
+width: 25px;
+height: 25px;
+border-radius: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: none;
+background-color: $bonewhite;
+cursor: pointer;
+&:hover{
+  border: 1px solid $mocha;
+}
+}
+  
+
+.btn-serving:hover:not(:disabled) {
+  background-color: #e9ecef;
+}
+
+.btn-serving:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.servings-input {
+  width: 40px;
+  height: 25px;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: $warmwhite;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+.servings-input::-webkit-outer-spin-button,
+.servings-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.servings-input:focus {
+  outline: none;
+}
+
+.ingredient-quantity {
+  font-size: 13px;
+  color: #666;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+.item-name.checked {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
