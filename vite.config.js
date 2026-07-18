@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import path from 'path'
 
 export default defineConfig(({ command }) => ({
-  base: command === 'serve' ? '/' : '/K_recipe_web-main/',
+  base: command === 'serve' ? '/' : '/K_recipe_web/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
