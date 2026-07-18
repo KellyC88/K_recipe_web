@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
+$bonewhite: #f4efe6;
+$warmwhite: #e7dfcf;
+$warmbeige: #c4b39a;
+$sand: #cec1ab;
+$olivebrown: #92816c;
+$earthbrown: #8a7356;
+$mocha: #5a4d41;
+$espresso: #5b4c3a; 
+$charcoal: #191a1e;
+$winered: #49110b;
+
+
+@mixin aspectratio($width, $height, $custom-width: 100%) {
+  position: relative;
+  width: $custom-width;
+  height: ($custom-width * $height) / $width;
+}
+
+.product-details-page {
+  padding-top: 90px;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: $warmwhite;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.product_page {
+  padding-left: 20px;
+}
+
+.product_visual {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product_name{
+    padding-top: 0;
+    height: fit-content;
+    width: 100%;
+    // border: 1px solid $charcoal;
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: 550;
+    color: $charcoal;
+    margin: 0px;
+}
+.product_img_box{
+    border: 1px solid $charcoal;
+    margin-top: 20px;
+    position: relative;
+    
+}
+.photo-3-4{
+    @include aspectratio(3, 4, 400px);
+    border: 1px solid $charcoal;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  // .description_title{
+  //   border: 1px solid $charcoal;
+  //   width: fit-content;
+  //   height: fit-content;
+  //   font-size: 18px;
+  //   font-family: "Momo Signature", cursive;
+  //   font-weight: 600;
+  //   color: $mocha;
+  //   margin-top: 15px;
+  //   // margin-bottom: 20px;
+  // }
+  // .description_text{
+  //   width: 400px;
+  //   height: fit-content;
+  //   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  //   font-size: 14px;
+  //   text-align: left;
+  //   margin: 0;
+  //   margin-bottom: 20px;
+  // }
+  // .description_box{
+  //   // border: 1px solid $charcoal;
+  //   width: 400px;
+  //   height: fit-content;
+  //   position: absolute;
+  //   left: 480px;
+  //   top: 180px;
+  //   padding-left: 20px;
+  //   margin: none;
+  //   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  //   font-size: 14px;
+  //   text-align: left; 
+  // }
+  .scrollspy{
+    h4{
+      margin: 0;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+    p{
+      padding-left: 5px;
+      padding-bottom: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 12px;
+    }
+  }
+  .ingredient_check_box{
+    border: 1px solid $olivebrown;
+    border-radius: 15px;
+    width: 400px;
+    height: fit-content;
+    position: absolute;
+    left: 480px;
+    top: 180px;
+    padding-left: 20px;
+    margin: none;
+    height: fit-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    background-color: $warmbeige;
+    .col-4{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .product_recipe{
+    border: 1px solid $olivebrown;
+    border-radius: 15px;
+    width: 400px;
+    height: fit-content;
+    position: absolute;
+    left: 950px;
+    top: 180px;
+    padding-left: 20px;
+    height: fit-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    background-color: $warmbeige;
+    p{
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 12px;
+    }
+    h4{
+      margin: 0;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  }
+  .ingredient_title{
+    font-size: 18px;
+    font-family: "Momo Signature", cursive;
+    font-weight: 600;
+    color: $mocha;
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
+  .recipe_title{
+    font-size: 18px;
+    font-family: "Momo Signature", cursive;
+    font-weight: 600;
+    color: $mocha;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
