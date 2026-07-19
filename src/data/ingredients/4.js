@@ -8,4 +8,5 @@ export default {
     { name: 'ginger', quantity: 5, unit: 'g' },
     { name: 'cinnamon', quantity: 3, unit: 'g' },
   ],
+  
 };

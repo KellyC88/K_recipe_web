@@ -46,7 +46,7 @@
     <div class="box">
       <router-link class="img_container" :to="{name:'ProductDetails', params:{id:5}}">
         <div class="img_overlay">
-          <div class="img_text">SCRAMBLED OATBOWL</div>
+          <div class="img_text">SCRAMBLED OAT BOWL</div>
         </div>
         <a href="#!" ><img class="img" src="@/assets/oatmeal01.jpg"></a>
       </router-link>
@@ -58,13 +58,13 @@
       </router-link>
       <router-link class="img_container"  :to="{name:'ProductDetails', params:{id:6}}">
         <div class="img_overlay"> 
-          <div class="img_text">FRUIT OATBOWL</div>
+          <div class="img_text">FRUIT OAT BOWL</div>
         </div>
         <a href="#!" ><img class="img" src="@/assets/oat.jpg"></a>
       </router-link>
       <router-link class="img_container" :to="{name:'ProductDetails', params:{id:7}}">
         <div class="img_overlay">
-          <div class="img_text">YOGURT OATBOWL</div>
+          <div class="img_text">YOGURT OAT BOWL</div>
         </div>
         <a href="#!" ><img class="img" src="@/assets/cooked_oat.jpeg"></a>
       </router-link>
@@ -81,7 +81,7 @@
       </router-link>
       <router-link class="img_container" :to="{name:'ProductDetails', params:{id:9}}">
         <div class="img_overlay">
-          <div class="img_text">BAGEL</div>
+          <div class="img_text">BAGEL PLATE</div>
         </div>
         <a href="#!" ><img class="img" src="@/assets/bagel.jpg"></a>
       </router-link>
