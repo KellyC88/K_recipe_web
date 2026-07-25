@@ -1,14 +1,14 @@
 <template>
   <div class="recipe">
     <div v-if="steps && steps.length">
-      <div v-for="step in steps" :key="step.step" class="recipe-step">
+      <div v-for="(step, index) in steps" :key="index" class="recipe-step">
         <h4 class="step-title">Step {{ step.step }}</h4>
         <p class="step-desc">{{ step.description }}</p>
       </div>
     </div>
-    <div v-else>
+    <!-- <div v-else>
       <p>No recipe steps available.</p>
-    </div>
+    </div> -->
   </div>
 </template>
   
@@ -19,7 +19,7 @@ export default {
   props: {
     recipe: {
       type: [Object, Array],
-      default: () => ({})
+      default: () => []
     }
   },
   computed: {

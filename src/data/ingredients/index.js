@@ -17,10 +17,12 @@ export default {
   2: buildProductData(ing2.servings, ing2.ingredients, [
     { step: 1, description: 'Toast the sourdough bread until lightly crisp.' },
     { step: 2, description: 'Top with yogurt, egg, avocado, and blueberries.' },
+    { step: 3, description: 'Add sliced avocado and fresh fruits.' },
   ]),
   3: buildProductData(ing3.servings, ing3.ingredients, [
     { step: 1, description: 'Whisk butter, flour, sugar, eggs, milk, salt, yeast, and water into a smooth dough.' },
     { step: 2, description: 'Bake until golden and fluffy.' },
+    { step: 3, description: 'Top the croissant with poedered sugar and almonds.' },
   ]),
   4: buildProductData(ing4.servings, ing4.ingredients, [
     { step: 1, description: 'Blend mint, water, lemon juice, honey, ginger, and cinnamon until smooth.' },

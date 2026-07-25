@@ -6,7 +6,7 @@ export default [
     {id: 2, recipe: [
         { step: 1, description: 'Toast the sourdough bread until lightly crispy.' },
         { step: 2, description: 'Top with yogurt egg salad.' },
-        {step: 3, description: 'Add sliced avocado and fresh fruits.' },
+        { step: 3, description: 'Add sliced avocado and fresh fruits.' },
     ]},
     {id: 3, recipe: [
         { step: 1, description: 'Whisk butter, flour, sugar, eggs, milk, salt, yeast, and water into a smooth dough.' },
